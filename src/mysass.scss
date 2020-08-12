@@ -1,0 +1,34 @@
+// Header Styles
+$headerText:red;
+$headerBackGround:black;
+
+h1 {
+  color:$headerText;
+}
+
+.header {
+  background-color:$headerBackGround;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//animation
+.logo-animate {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+//img
+img {
+  height:auto;
+  width:100%;
+}

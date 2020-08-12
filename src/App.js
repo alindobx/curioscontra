@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Grid, Row } from "react-flexbox-grid";
+import logo from './img/LOGO-justCircle.svg'
+import './mysass.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
-  );
+    <Grid className="header">
+      <Row>
+          <div><img src={logo} alt={logo} className="logo-animate" /></div>
+      </Row>
+    </Grid>
+  )
 }
 
 export default App;
